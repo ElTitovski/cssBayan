@@ -2,4 +2,50 @@
 *:after{
     box-sizing: border-box;
 }
+input{
+    width: 0;
+    height: 0;
+}
+input:checked ~ .img__conteiner{
+    display: block;
 
+}
+input:checked ~ label{
+    color: blue;
+}
+input:checked ~ label:after{
+    content: "♦";
+}
+
+
+.conteiner__blocks{
+    margin: 10px auto 0px auto;
+    max-width: 1030px;
+
+}
+label:after{
+    content: "♥";
+
+
+}
+
+label{
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background .5s ease-out;
+}
+label:hover{
+    color: blue;
+}
+input1{
+    position: absolute;
+    -webkit-appearence: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+.img__conteiner{
+    display: none;
+
+}
