@@ -1,0 +1,78 @@
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+input{
+    width: 0;
+    height: 0;
+}
+.img__conteiner:hover{
+    display: block;
+}
+input:hover ~ .img__conteiner{
+    display: block;
+    transition: 0.5s all;
+}
+input:checked ~ .img__conteiner{
+    display: block;
+    transition: 0.5s all;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+    cursor: pointer;
+}
+ input:checked ~ label{
+    color: black;
+    
+} 
+input:checked ~ label:after{
+    content: "♦";
+}
+input:hover ~ label:after{
+    opacity: 1;
+    transition: .5s ;
+}
+
+.conteiner__blocks{
+    margin: 10px auto 0px auto;
+    max-width: max-content;
+   
+
+}
+.conteiner__header{
+    color: black;
+}
+.memes_block{
+    color: blue;
+}
+.conteiner__blocks:focus{
+    color: black;
+}
+
+
+
+label{
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+label:hover{
+    color: black;
+    transition: color 0.3s ease-out;
+}
+label:after{
+    content: "♥";
+    opacity: 0;
+}
+
+input1{
+    position: absolute;
+    -webkit-appearence: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+.img__conteiner{
+    display: none;
+}
